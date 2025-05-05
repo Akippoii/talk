@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reveal Message</title>
+  <style>
+    #talk {
+      display: none;
+      font-size: 1.2em;
+      margin-top: 20px;
+      transition: opacity 0.5s ease;
+      opacity: 0;
+    }
+    #talk.show {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" onclick="document.getElementById('talk').classList.add('show')">Click here</a>
+  <p id="talk">when can i talk ma'am</p>
+</body>
+</html>
